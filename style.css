@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+  position: relative;
+    background: linear-gradient(45deg,rgb(253, 248, 248),rgb(72, 152, 231));
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 0 3vw;
+padding-top: 4vh;
+}
+/* Search bar styles */
+/* Existing styles for other elements */
+
+/* Search bar styles */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 24vw; /* Default width for larger screens */
+    max-width: 300px; /* Maximum width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+ .div-left::before{
+    content: "News";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: rgb(255, 196, 0);
+z-index: 3;
+}
+.div-right::before{
+    content: "Events";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: rgb(255, 196, 0);
+
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Adjust the width and font-size for smaller screens */
+    .search-bar {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: none; /* Override maximum width */
+        font-size: 0.9em; /* Adjust font size */
+    }
+    .search-button {
+        font-size: 0.9em; /* Adjust font size */
+    padding: 0px 20px;
+    }
+    .content .button{
+        padding: 8px;
+        position: relative;
+
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for even smaller screens */
+    .search-bar {
+        width: 90%; /* Adjust width for even smaller screens */
+        font-size: 0.8em; /* Adjust font size */
+    }
+    .search-button {
+        font-size: 0.8em; /* Adjust font size */
+    }
+}
+
+
+nav h2 img{
+    width: 20vw;
+}
+.nav2{
+    display: flex;
+    gap: 3vw;
+}
+.nav2 h4{
+    font-size: 1vw;
+    cursor: pointer;
+}
+.nav2 h4:hover{
+    color: rgb(219, 40, 40);
+}
+.nav2 i{
+    font-size: 1.3vw;
+    font-weight: 700;
+    display: none;
+}
+.content{
+    height:40vh;
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    padding: 5vw 8vw;
+    background: transparent;
+}
+.content p {
+    font-size: 1vw; /* Use relative units like 'em' for better responsiveness */
+    text-align: center; /* Center align the text */
+  flex-wrap: wrap;
+}
+.nav2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    height: 5vh; /* Use a percentage or relative height */
+    width: 7vw; /* Use a percentage or relative width */
+    max-width: 200px; /* Set a maximum width if needed */
+    margin-top: 20px; /* Adjust margin as needed */
+background-color: blueviolet;
+color: white;
+font: bold;
+border-radius: 1vw;
+cursor: pointer;
+}
+/* Your existing CSS */
+.video-box {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    /*  Ensure the video is contained within the box */
+    background-color: rgb(255, 255, 255,0.1);
+overflow: hidden;
+}
+
+.backvideo {
+    position: absolute;
+    top: 50%; /* Position the video halfway down the container */
+    left: 50%; /* Position the video halfway across the container */
+    transform: translate(-50%, -50%); /* Center the video */
+   min-height: 100%;
+    min-width: 100%;
+}
+.service-box{
+    margin-top: 2px;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background: rgba(212, 32, 32,0.1);
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  
+   
+
+  /* padding-right: 2vw;*/
+   /* padding-top: 1.5vh;  */
+}
+
+.service-wrapper{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    background-color: transparent;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box1{
+    height:50vh;
+    width: 20vw;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   /* padding: 1vw; */
+    background:url("Clothes.png")no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+.box2{
+    height:50vh;
+    width: 20vw;
+    border-radius: 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url("download.jpeg")no-repeat;
+    background-size: cover;
+    
+}
+.box3{
+    height:50vh;
+    width: 20vw;
+    border-radius: 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url("Arts.jpeg")no-repeat;
+    background-size: cover;
+}
+.box1 p{
+       font-size:0.7vw;
+    text-align: center;
+    font-weight: 100;
+    font-weight: 100;
+    color: rgb(230, 219, 219);
+    
+    margin-top: 20px;
+    border: 0.3vw solid wheat;
+}
+.box2 p{
+       font-size:0.7vw;
+    text-align: center;
+    font-weight: 100;
+    font-weight: 100;
+    color: rgb(230, 219, 219);
+    
+    margin-top: 20px;
+    border: 0.3vw solid wheat;
+}
+
+.box3 p{
+    background-size: cover;
+    object-fit: contain;
+    font-size: 0.7vw;
+    text-align: center;
+    font-weight: 100;
+    font-weight: 100;
+    color: white;
+    border: 0.3vw solid wheat;
+    margin-top: 20px;
+
+}
+
+.extra{
+height: 64vh;
+width: 100%;
+background: wheat;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12%;
+
+}
+.div-center{
+    height: 35vh;
+    width: 19vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.div-center img{
+    height: 100%;
+    width: 100%;
+}
+.div-left{
+    height: 35vh;
+    width: 19vw;
+background: white;
+background-size: contain;
+
+}
+.div-left {
+    height: 35vh;
+    width: 19vw;
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+}
+
+#newsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    animation: scrollList 20s linear infinite; /* Adjust the animation duration as needed */
+    z-index: 0;
+}
+
+#newsList a {
+    display: block;
+    font-size: 1vw;
+    line-height: 1.5; /* Adjust line height for better readability */
+    color: black;
+    text-decoration: none;
+    
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scrollList {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(-100% - 20px)); /* Adjust based on the height of each link */
+    }
+}
+
+
+.div-right{
+    height: 35vh;
+    width: 19vw;
+background: white;
+background-size: contain;
+
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    background: yellow;
+}
+
+@media (max-width:600px){
+ nav h2 img{
+width: 55vw;
+ }   
+ .nav2 h4{
+    font-size: 2vw;
+display: none;
+ }
+ .nav2 i{
+   font-size: 7vw;
+    display: block;
+}
+}
+
+@media (max-width:600px){
+
+.service-box-container{
+    min-height: 90%;
+}
+}
+/* .box1 img{
+    height: 100%;
+    width: 100%;
+} */
+/* Responsive adjustments */
+
+
+@media (max-width: 841px) {
+    /* Adjustments for smaller screens */
+    .nav2 h4 {
+        display: none;
+    }
+    .nav2 i {
+        display: block;
+    }
+    nav h2 img {
+        width: 55vw;
+    }
+    .content {
+        padding: 10vw 8vw;
+    }
+    .content p {
+        font-size: 1vw;
+    }
+
+    .button {
+        height: 1vh;
+        width: 10vw;
+        font-size: 1vw;
+        border-radius: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-box {
+        height: 60vh;
+    }
+    .service-box {
+        height: auto;
+    }
+    .service-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .box1,
+    .box2,
+    .box3 {
+        height: 30vh;
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+    .box1 p,
+    .box2 p,
+    .box3 p {
+        font-size: 2vw;
+    }
+    .extra{
+        display: flex;
+        height: 70vh;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .div-left{
+height: 35vh;
+width: 40vw;
+    }
+    .div-center{
+height: 35vh;
+width: 40vw;
+    }
+    .div-right{
+height: 35vh;
+width: 40vw;
+    }
+}
